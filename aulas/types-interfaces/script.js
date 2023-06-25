@@ -1,2 +1,3 @@
-var valor = 30;
+"use strict";
+let valor = 30;
 valor = '321';

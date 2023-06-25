@@ -1,9 +1,10 @@
-var links = document.querySelectorAll('.link');
+"use strict";
+const links = document.querySelectorAll('.link');
 function ativarElement(element) {
-    if (element instanceof HTMLElement) {
-        element.style.border = '2px solid blue';
-    }
+    element.style.border = '2px solid blue';
 }
-links.forEach(function (link) {
-    ativarElement(link);
+links.forEach(link => {
+    if (link instanceof HTMLElement) {
+        ativarElement(link);
+    }
 });
